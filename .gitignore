@@ -2,6 +2,15 @@
 
 /vendor/
 
+/_cache/*
+!/_cache/.keep
+
+/Csv/*
+!/Csv/.keep
+
+/Recordings/*
+!/Recordings/.keep
+
 _credentials.php
 
 
