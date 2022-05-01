@@ -1,0 +1,11 @@
+{
+    "token_type": "bearer",
+    "access_token": "U0pDMTFQMDFQQVMwMHxBQUF1ZklDUFZ1ZFd5SjJWcWRrckJDMUVXaEhMQ1ZEc1d5cVFhMFFqdHdxWVhFek1ydExfSk1vVU9PaHA2UnVub21UY3hJY2VYRzl1MF94cWRRM2pXeXJTaExRREFrNDllcWZONk9HakFjT01aNGdqMUF1cDZmWUlMX3d0U3JvVi1pU2tuTDVremNqQXNpZ0p1MnVDeU1HeWF3c3hhTGRybW9CS28yOWtxaldjdms3NHA5aVpOZGJSNk9qa0thV3l4UlRsQk1fb3xkaEVKZ1F8eVFVcG5jRzMyaUd1cVR1VEhZUjB6Z3xBUQ",
+    "expires_in": 3600,
+    "expire_time": 1651394311,
+    "refresh_token": "",
+    "refresh_token_expires_in": 0,
+    "refresh_token_expire_time": 0,
+    "scope": "ReadMessages Faxes ReadAccounts SMS ReadCallLog ReadCallRecording",
+    "owner_id": "717463005"
+}
