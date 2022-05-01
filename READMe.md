@@ -15,7 +15,7 @@ https://github.com/anilkumarbp/Sample-Demo-to-Download-Call-Recordings/tree/mast
 
 #### $ composer install
 
-#### $ cp  _credentials-Sample.php  _credentials.php
+#### $ cp  _credentials-Sample.php 		_credentials.php
 
 
 #### $ php call-recording.php  2022-04-24 2022-04-25
