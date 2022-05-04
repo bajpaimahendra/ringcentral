@@ -1,6 +1,6 @@
 .DS_Store
 
-/vendor/
+###/vendor/
 
 /_cache/*
 !/_cache/.keep

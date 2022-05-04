@@ -32,10 +32,10 @@ echo  '
 
 $credentials = require(__DIR__ . '/_credentials.php');
 
-print_r($credentials);//die('1111111');
+//print_r($credentials);//die('1111111');
 
 
-$rcsdk = new SDK($credentials['clientId'], $credentials['clientSecret'], $credentials['server'], 'RD', '1.0.0');
+$rcsdk = new SDK($credentials['clientId'], $credentials['clientSecret'], $credentials['server'], 'brightway', '1.0.0');
 
 $platform = $rcsdk->platform();
 
@@ -45,17 +45,7 @@ $platform->login($credentials['username'], $credentials['extension'], $credentia
 
 // Find call log records with recordings For extension
 
-$callLogRecords = $platform->get('/account/~/extension/~/call-log', array(
-                             'type'          => 'Voice',
-                             'withRecording' => 'True',
-                             'dateFrom'      => $dateFrom,
-                             'dateTo'        => $dateTo
-                              )
-                            )
-                           ->json()->records;
-
-
-// $callLogRecords = $platform->get('/account/~/call-log', array(
+// $callLogRecords = $platform->get('/account/~/extension/~/call-log', array(
 //                              'type'          => 'Voice',
 //                              'withRecording' => 'True',
 //                              'dateFrom'      => $dateFrom,
@@ -64,11 +54,23 @@ $callLogRecords = $platform->get('/account/~/extension/~/call-log', array(
 //                             )
 //                            ->json()->records;
 
+
+$callLogRecords = $platform->get('/account/~/call-log', array(
+                             'type'          => 'Voice',
+                             'withRecording' => 'True',
+                             'dateFrom'      => $dateFrom,
+                             'dateTo'        => $dateTo
+                              )
+                            )
+                           ->json()->records;
+
+ print_r($callLogRecords);                          
+
 // Create a CSV file to log the records
 
   $status = "Success";
   $dir = $dateFrom;
-  $fname = __DIR__."/Csv/recordings_${dir}.csv";
+  $fname = __DIR__."/Recordings/recordings_${dir}.csv";
   $fdir = __DIR__."/Recordings/${dir}";
 
   if (is_dir($fdir) === false)

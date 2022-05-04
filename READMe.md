@@ -20,3 +20,8 @@ https://github.com/anilkumarbp/Sample-Demo-to-Download-Call-Recordings/tree/mast
 
 #### $ php call-recording.php  2022-04-24 2022-04-25
 
+
+https://github.com/anilkumarbp/Sample-Demo-to-Download-Call-Recordings/blob/master/demo/callRecording.php
+
+https://github.com/PacoVu/call-ringcentral-faxapi-native-php-demo/blob/master/demo.php
+
